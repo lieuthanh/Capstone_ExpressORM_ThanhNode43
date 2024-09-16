@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "b6f31ecf-7d66-4886-a005-9c7f655bdd87",
+		"name": "node43",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33641922"
+	},
+	"item": [
+		{
+			"name": "Get Info User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/get-info-user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-info-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/get-all-image",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-all-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/get-image-detail/3",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-image-detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Image By Name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/search-image?searchName=10",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"search-image"
+					],
+					"query": [
+						{
+							"key": "searchName",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"user1@example.com\",\n    \"mat_khau\":\"ac\",\n    \"ho_ten\":\"ac\",\n    \"tuoi\":\"ac\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/auth/sign-up",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"auth",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"user1@example.com\",\n    \"mat_khau\":\"ac\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/auth/login",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload image user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hinhAnh",
+							"type": "file",
+							"src": "/Users/lieuthanh/Documents/HINH DEP/5ffd05c9aed01344047e3926597ee883.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/user/upload-image",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"upload-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/auth/reset-token",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"auth",
+						"reset-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get comment imageID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/image/get-comment/2",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-comment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check image save",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/get-check-image-save/2/2",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"get-check-image-save",
+						"2",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"imageId\":\"2\",\n    \"nguoi_dung_id\":\"3\",\n    \"content\":\"Chào bạn\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/image/create-comment",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"create-comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete image",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/image/delete-image/12",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"image",
+						"delete-image",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "image saved userid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/image-saved-userid",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"image-saved-userid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "image created userid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/user/image-created-userid",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"image-created-userid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update info user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJJZCI6MSwia2V5IjoxNzI2MzMwNzE0Nzc3fSwiaWF0IjoxNzI2MzMwNzE0LCJleHAiOjE3MjY5MzU1MTR9.pJUEQ7wf208bjFHqyyhx2X2Hzi_bVoFTY_CTLejOfhg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullName\":\"ngu ho tuong\",\n    \"age\":\"13\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/update-info-user",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"update-info-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
